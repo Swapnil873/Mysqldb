@@ -36,6 +36,7 @@ if(isset($_POST['']))
 	 $Name = $_POST['Name'];
 	 $email = $_POST['email'];
 	 $phno = $_POST['phno'];
+	 $reg_date = $_POST['reg_date'];
 	 $sql = "INSERT INTO Registrations (Eventname,Name,email,phno,reg_date)
 	 VALUES ('$Eventname','$Name','$email','$phno','$reg_date')";
 	 if (mysqli_query($conn, $sql)) {
